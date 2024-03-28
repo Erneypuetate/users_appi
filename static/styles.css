@@ -1,50 +1,86 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: url(fondo.jpg) no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
     height: 100vh;
-    /*background: url(../img/fondo.jpg) no-repeat center top;*/
-}
-.container {
+  }
+  
+  .login-box {
     width: 320px;
     height: 420px;
-    padding: 20px;
-    background-color: #8c9ec9;
+    background: #000;
     color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(214, 196, 196, 0.1);
-}
-.container h2 {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+  }
+  
+  .login-box .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+  }
+  
+  .login-box h1 {
+    margin: 0;
+    padding: 0 0 20px;
     text-align: center;
-    margin-bottom: 20px;
-}
-.form-group {
-    margin-bottom: 20px;
-}
-.form-group label {
-    display: block;
+    font-size: 22px;
+  }
+  
+  .login-box label {
+    margin: 0;
+    padding: 0;
     font-weight: bold;
-    margin-bottom: 5px;
-}
-.form-group input {
+    display: block;
+  }
+  
+  .login-box input {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-.btn-submit {
-    width: 100%;
-    padding: 10px;
-    background-color: #c2d1e0;
-    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .login-box input[type="text"], .login-box input[type="password"] {
     border: none;
-    border-radius: 5px;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .login-box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #b80f22;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+  
+  .login-box input[type="submit"]:hover {
     cursor: pointer;
-    transition: background-color 0.3s;
-}
-.btn-submit:hover {
-    background-color: #e97619;
-}
+    background: #ffc107;
+    color: #000;
+  }
+  
+  .login-box a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+  }
+  
+  .login-box a:hover {
+    color: #fff;
+  }
