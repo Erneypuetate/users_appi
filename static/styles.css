@@ -6,14 +6,16 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #058c3b;
+    /*background: url(../img/fondo.jpg) no-repeat center top;*/
 }
 .container {
-    width: 300px;
+    width: 320px;
+    height: 420px;
     padding: 20px;
-    background-color: #142b9b;
+    background-color: #8c9ec9;
+    color: #fff;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(214, 196, 196, 0.1);
 }
 .container h2 {
     text-align: center;
@@ -36,7 +38,7 @@ body {
 .btn-submit {
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #c2d1e0;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -44,5 +46,5 @@ body {
     transition: background-color 0.3s;
 }
 .btn-submit:hover {
-    background-color: #0056b3;
+    background-color: #e97619;
 }
