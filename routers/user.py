@@ -1,7 +1,8 @@
 from fastapi import APIRouter, Response, status, HTTPException, Request, Form
 from fastapi.templating import Jinja2Templates
+from fastapi.responses import HTMLResponse
 from config.db import conn
-from schemas. user import userentity, usersentity
+from schemas.user import userentity, usersentity
 from models.user import User
 from passlib.hash import sha256_crypt
 from bson import ObjectId
@@ -9,9 +10,11 @@ from starlette.status import HTTP_204_NO_CONTENT
 
 user=APIRouter()
 
-templates = Jinja2Templates(directory="views")
+templates = Jinja2Templates(directory="templates")
 
-@user.get("/")
+#user.mount("/static", StaticFiles(directory="static"), name="static")
+
+@user.get("/", response_class=HTMLResponse)
 async def read_root(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
 
@@ -20,11 +23,6 @@ async def read_root(request: Request):
 async def login(username: str = Form(...), password: str = Form(...)):
     # Aquí puedes agregar la lógica para autenticar al usuario con los datos recibidos
     return {"username": username, "password": password}
-
-@user.get('/')
-def login():
-    return "estamos trabajando en el login"
-
 
 
 @user.get('/users', response_model=list[User], tags=["users"])

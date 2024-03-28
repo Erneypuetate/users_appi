@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
 from routers.user import user
 from config.tags import tags_metadata 
 
@@ -11,3 +12,5 @@ app=FastAPI(
 )
 
 app.include_router(user)
+
+app.mount("/static", StaticFiles(directory="static"), name="static")
