@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(fondo.jpg) no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    width: 320px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #b80f22;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    position: relative;
+    top: 30px; /* Mueve el input hacia abajo */
+    left: 80px; /* Mueve el input hacia la derecha */
+    
+    
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+    margin-bottom: 100px;
+    position: relative;
+    top: 65px; /* Mueve el input hacia abajo */
+    right: 0px; /* Mueve el input hacia la derecha */
+    
+    
+}
+
+a:hover {
+    color: #fff;
+}

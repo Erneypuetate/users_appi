@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(inicio.jpg) no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+  
+
+.error-message {
+    text-align: center; /* Centra el texto horizontalmente */
+    margin-top: 100px; /* Espacio superior */
+    font-size: 18px;
+    color: #ff0000; /* Color rojo para el mensaje de error */
+}
+
+.return-button {
+    display: block; /* Convierte el enlace en un elemento de bloque */
+    text-align: center; /* Centra el texto horizontalmente */
+    margin-top: 20px; /* Espacio superior */
+    font-size: 16px;
+    color: #0000ff; /* Color azul para el enlace */
+    text-decoration: none; /* Quita el subrayado del enlace */
+}
+
+.return-button:hover {
+    color: #000; /* Cambia el color del enlace al pasar el cursor por encima */
+}
